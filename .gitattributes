@@ -1,0 +1,2 @@
+LOCAL_PEOPLE_DONG_202510.csv filter=lfs diff=lfs merge=lfs -text
+./data/* filter=lfs diff=lfs merge=lfs -text
