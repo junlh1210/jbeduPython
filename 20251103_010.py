@@ -1,0 +1,6 @@
+print("a" * 3)
+print(100 * 3)
+print("")
+print("aaa"+"bbb")
+print(100+200)
+print("="*10)
