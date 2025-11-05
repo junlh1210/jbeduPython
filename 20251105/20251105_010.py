@@ -3,16 +3,17 @@ b = int(input("숫자2 : "))
 c = input("원하는 연산(+,-,*,/,//,%,**)은? : ")
 
 if (c == '+'):
-    print(f"{a}{c}{b}는 {a+b}입니다")
+    d = a+b
 elif (c == '-'):
-    print(f"{a}{c}{b}는 {a-b}입니다")
+    d = a-b
 elif (c == '*'):
-    print(f"{a}{c}{b}는 {a*b}입니다")
+    d = a*b
 elif (c == '/'):
-    print(f"{a}{c}{b}는 {a/b}입니다")
+    d = a/b
 elif (c == '//'):
-    print(f"{a}{c}{b}는 {a//b}입니다")
+    d = a//b
 elif (c == '%'):
-    print(f"{a}{c}{b}는 {a%b}입니다")
+    d = a%b
 elif (c == '**'):
-    print(f"{a}{c}{b}는 {a**b}입니다")
+    d = a**b
+print(f"{a}{c}{b}는 {d}입니다")
