@@ -6,7 +6,6 @@ x = int(input("정수값을 입력하세요 : "))
 
 if (x%2 == 0):
     print("짝수")
-    print("감사합니다")
 else: 
     print("홀수")
-    print("감사합니다")
+print("감사합니다")
