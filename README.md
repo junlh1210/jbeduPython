@@ -2,4 +2,5 @@
 
 ## data 폴더에 데이터 파일 추가
 * LOCAL_PEOPLE_DONG_202510.csv 파일은 용량이 커서 제거
-    * 서울시 빅데이터 센터에서 다운 받거나 저장된 자료를 사용할 것
+    * https://data.seoul.go.kr/dataVisual/seoul/seoulLivingPopulation.do
+    * 행정동 단위 -> 서울 생활인구(내국인)
