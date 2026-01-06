@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Noctis Lux",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'D2CodingLigature Nerd Font', Consolas, 'Courier New', monospace",
+    "notebook.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontSize": 16,
+    "debug.console.fontSize": 16
+}
