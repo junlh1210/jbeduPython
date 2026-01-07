@@ -22,6 +22,12 @@ from sklearn.metrics import silhouette_score
 from yellowbrick.cluster import KElbowVisualizer
 from scipy.cluster.hierarchy import dendrogram, linkage
 from mpl_toolkits.mplot3d import Axes3D
+from operator import itemgetter
+from PIL import Image
+from collections import Counter
+from wordcloud import WordCloud
+import re
+
 
 import matplotlib.pyplot as plt
 plt.rc('font', family='malgun gothic')
