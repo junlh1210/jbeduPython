@@ -13,7 +13,7 @@ import statsmodels.formula.api as smf
 import networkx as nx
 import missingno as msno
 from sklearn.decomposition import PCA
-from sklearn.datasets import load_iris
+from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 import os
 import sys
 import urllib.request
@@ -36,6 +36,8 @@ from PIL import Image
 from collections import Counter
 from wordcloud import WordCloud
 import re
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.model_selection import train_test_split
 
 
 import matplotlib.pyplot as plt
