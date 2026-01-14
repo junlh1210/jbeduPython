@@ -12,15 +12,14 @@ import scipy as sp
 import statsmodels.formula.api as smf
 import networkx as nx
 import missingno as msno
-from sklearn.decomposition import PCA
-from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 import os
 import sys
 import urllib.request
 import time
 import json
 
-from dotenv import load_dotenv
+from sklearn.decomposition import PCA
+from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 from folium.plugins import HeatMap 
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
@@ -35,11 +34,12 @@ from operator import itemgetter
 from PIL import Image
 from collections import Counter
 from wordcloud import WordCloud
-import re
 from sklearn.tree import DecisionTreeClassifier, plot_tree
-from sklearn.model_selection import train_test_split
+
+import re
 
 
 import matplotlib.pyplot as plt
-plt.rc('font', family='malgun gothic')
-plt.rcParams['axes.unicode_minus']=False  # '- 표시
+# plt.rc('font', family='malgun gothic')
+# plt.rcParams['axes.unicode_minus']=False  # '- 표시
+plt.rc('font',family='D2CodingLigature Nerd Font')
