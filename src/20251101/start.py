@@ -2,6 +2,7 @@
 import warnings
 warnings.filterwarnings(action='ignore') 
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import csv
@@ -17,6 +18,8 @@ import sys
 import urllib.request
 import time
 import json
+import plotly.express as px
+import re
 
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
@@ -35,11 +38,8 @@ from PIL import Image
 from collections import Counter
 from wordcloud import WordCloud
 from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.model_selection import train_test_split
 
-import re
-
-
-import matplotlib.pyplot as plt
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
 plt.rc('font',family='D2CodingLigature Nerd Font')
