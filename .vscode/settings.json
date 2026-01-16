@@ -6,5 +6,6 @@
     "notebook.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "terminal.integrated.fontSize": 16,
-    "debug.console.fontSize": 16
+    "debug.console.fontSize": 16,
+    "workbench.editorLargeFileConfirmation": 1000
 }
