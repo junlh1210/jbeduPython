@@ -45,6 +45,8 @@ from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
+from sklearn.model_selection import KFold, cross_val_score
+from sklearn.pipeline import make_pipeline
 
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
