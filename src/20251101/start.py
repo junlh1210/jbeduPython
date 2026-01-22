@@ -20,6 +20,7 @@ import time
 import json
 import plotly.express as px
 import re
+import sklearn.metrics as metrics
 
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
@@ -39,6 +40,11 @@ from collections import Counter
 from wordcloud import WordCloud
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import Ridge
+from sklearn.linear_model import Lasso
 
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
