@@ -25,7 +25,7 @@ import sklearn.metrics as metrics
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 from folium.plugins import HeatMap 
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, LogisticRegression
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from dateutil.relativedelta import relativedelta
 from sklearn.cluster import KMeans    
@@ -38,7 +38,8 @@ from collections import Counter
 from wordcloud import WordCloud
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.model_selection import train_test_split, cross_val_score, KFold
-from sklearn.metrics import r2_score, ConfusionMatrixDisplay, confusion_matrix, accuracy_score, silhouette_score
+from sklearn.metrics import r2_score, ConfusionMatrixDisplay, confusion_matrix, silhouette_score, classification_report
+from sklearn.metrics import accuracy_scor, perecision_score, recall_score, f1_score, roc_auc_score
 from sklearn.neighbors import KNeighborsClassifier
 
 # plt.rc('font', family='malgun gothic')
