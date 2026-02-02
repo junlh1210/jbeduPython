@@ -23,7 +23,7 @@ import re
 import sklearn.metrics as metrics
 
 from sklearn.decomposition import PCA
-from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
+from sklearn import datasets
 from folium.plugins import HeatMap 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, LogisticRegression
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
@@ -41,6 +41,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, KFold
 from sklearn.metrics import r2_score, ConfusionMatrixDisplay, confusion_matrix, silhouette_score, classification_report
 from sklearn.metrics import accuracy_scor, perecision_score, recall_score, f1_score, roc_auc_score
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
