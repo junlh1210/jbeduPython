@@ -9,6 +9,7 @@ dependencies = [
     "counter>=1.0.0",
     "deep-translator>=1.11.4",
     "folium>=0.20.0",
+    "geopandas>=1.1.2",
     "konlpy>=0.6.0",
     "matplotlib>=3.10.7",
     "missingno>=0.5.2",
