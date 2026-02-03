@@ -43,6 +43,10 @@ from sklearn.metrics import accuracy_scor, perecision_score, recall_score, f1_sc
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+from scipy.spatial import distance
+
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
 plt.rc('font',family='D2CodingLigature Nerd Font')
