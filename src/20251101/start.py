@@ -21,9 +21,14 @@ import json
 import plotly.express as px
 import re
 import sklearn.metrics as metrics
+import yfinance as yf
 
+from openpyxl import load_workbook
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense
 from sklearn.decomposition import PCA
-from sklearn import datasets
+from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 from folium.plugins import HeatMap 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, LogisticRegression
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
@@ -38,14 +43,9 @@ from collections import Counter
 from wordcloud import WordCloud
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.model_selection import train_test_split, cross_val_score, KFold
-from sklearn.metrics import r2_score, ConfusionMatrixDisplay, confusion_matrix, silhouette_score, classification_report
-from sklearn.metrics import accuracy_scor, perecision_score, recall_score, f1_score, roc_auc_score
+from sklearn.metrics import r2_score, ConfusionMatrixDisplay, confusion_matrix, accuracy_score, silhouette_score, classification_report, precision_score, recall_score, f1_score, roc_auc_score
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.ensemble import RandomForestClassifier
 
-import cartopy.crs as ccrs
-import cartopy.feature as cfeature
-from scipy.spatial import distance
 
 # plt.rc('font', family='malgun gothic')
 # plt.rcParams['axes.unicode_minus']=False  # '- 표시
