@@ -23,6 +23,8 @@ import re
 import sklearn.metrics as metrics
 import yfinance as yf
 
+from prophet.plot import add_changepoints_to_plot, plot_plotly, plot_components_plotly
+from prophet import Prophet
 from openpyxl import load_workbook
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from tensorflow.keras.models import Sequential
