@@ -24,13 +24,17 @@ import sklearn.metrics as metrics
 import yfinance as yf
 import tensorflow as tf
 
-from keras.models import Sequential
-from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from keras.utils import to_categorical
+from keras.callbacks import ModelCheckpoint,EarlyStopping
+from tensorflow.python.keras.utils import np_utils
 from keras.datasets import mnist
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from prophet.plot import add_changepoints_to_plot, plot_plotly, plot_components_plotly
-from prophet import Prophet
+from prophet  import Prophet
 from openpyxl import load_workbook
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris, load_wine, load_breast_cancer, load_diabetes
 from folium.plugins import HeatMap 
